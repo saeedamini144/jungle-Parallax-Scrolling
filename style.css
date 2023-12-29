@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 :root{
     --green-color: #359381;
     --body-color:#f9f9f9;
@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fjalla';
+    font-family: 'Abel', sans-serif;
 }
 body{
     background: var(--body-color);
@@ -21,7 +21,6 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    /* right: 0; */
     width: 100%;
     padding: 30px 100px;
     display: flex;
@@ -66,13 +65,16 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     pointer-events: none;
+    transform-origin: bottom;
+    transition: .3s;
+    object-fit: cover;
 }
 .sec{
     position: relative;
     background: var(--dark-green);
     padding: 250px;
-    margin-top: 5em;
 }
 .sec h2{
     font-size: 3em;
